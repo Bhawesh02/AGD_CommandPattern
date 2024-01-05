@@ -4,11 +4,7 @@ namespace Command.Commands
 {
     public abstract class UnitCommand : ICommand
     {
-        public int ActorUnitID;
-        public int TargetUnitID;
-        public int ActorPlayerID;
-        public int TargetPlayerID;
-
+        public CommandData UnitCommandData;
         protected UnitController actorUnit;
         protected UnitController targetUnit;
 
